@@ -1,0 +1,15 @@
+import './index.css'
+
+const DestinationItem = props => {
+  const {placeDetails} = props
+  const {imgUrl, name} = placeDetails
+
+  return (
+    <li>
+      <img src={imgUrl} alt={name} />
+      <h1>{name}</h1>
+    </li>
+  )
+}
+
+export default DestinationItem
